@@ -18,6 +18,8 @@ spring:
     username: root
     password: dbpass
     initialize: false
+    testOnBorrow: true
+    validationQuery: SELECT 1
 eureka:
   instance:
     prefer-ip-address: true
@@ -37,6 +39,8 @@ spring:
     username: root
     password: dbpass
     initialize: true
+    testOnBorrow: true
+    validationQuery: SELECT 1
 eureka:
   instance:
     prefer-ip-address: true

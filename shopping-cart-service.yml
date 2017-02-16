@@ -24,6 +24,8 @@ spring:
     url: jdbc:mysql://192.168.99.100:3306/dev
     username: root
     password: dbpass
+    testOnBorrow: true
+    validationQuery: SELECT 1
 security:
   oauth2:
     resource:
@@ -51,6 +53,8 @@ spring:
     url: jdbc:mysql://mysql:3306/dev
     username: root
     password: dbpass
+    testOnBorrow: true
+    validationQuery: SELECT 1
 security:
   oauth2:
     resource:

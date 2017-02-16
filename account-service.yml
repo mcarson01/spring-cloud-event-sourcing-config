@@ -18,6 +18,8 @@ spring:
     username: root
     password: dbpass
     initialize: false
+    testOnBorrow: true
+    validationQuery: SELECT 1
 security:
   oauth2:
     resource:
@@ -33,6 +35,8 @@ spring:
     username: root
     password: dbpass
     initialize: true
+    testOnBorrow: true
+    validationQuery: SELECT 1
 security:
   oauth2:
     resource:
