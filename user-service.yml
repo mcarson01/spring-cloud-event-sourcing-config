@@ -15,13 +15,11 @@ security.ignored: /resources/**
 eureka:
   instance:
     prefer-ip-address: true
-#    non-secure-port: 8181
   client:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: https://discovery-service.apps.apcf.io/
-#      defaultZone: http://discovery-service:8761/eureka/
+      defaultZone: https://discovery-service.apps.apcf.io
 ---
 server:
   port: 8181
