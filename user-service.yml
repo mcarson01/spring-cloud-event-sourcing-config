@@ -11,6 +11,17 @@ security:
 spring:
   profiles: cloud
 security.ignored: /resources/**
+# added the following Eureka section
+eureka:
+  instance:
+    prefer-ip-address: true
+#    non-secure-port: 8181
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: https://discovery-service.apps.apcf.io/
+#      defaultZone: http://discovery-service:8761/eureka/
 ---
 server:
   port: 8181
