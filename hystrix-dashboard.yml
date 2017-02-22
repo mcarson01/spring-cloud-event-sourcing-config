@@ -1,7 +1,6 @@
 spring:
   profiles:
-    active: cloud
-    # the above was set to development
+    active: development
 ---
 spring:
   profiles: development
@@ -24,15 +23,3 @@ eureka:
     fetchRegistry: true
     serviceUrl:
       defaultZone: http://discovery-service:8761/eureka/
----
-# added the below profile for pcf
-spring:
-  profiles: cloud
-eureka:
-  instance:
-    prefer-ip-address: true
-  client:
-    registerWithEureka: true
-    fetchRegistry: true
-    serviceUrl:
-      defaultZone: https://discovery-service.apps.apcf.io
