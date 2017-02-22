@@ -19,7 +19,7 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: https://discovery-service.apps.apcf.io
+      defaultZone: https://eureka-281b086b-c070-4554-b1f0-8a3884e215e8.apps.apcf.io
 ---
 server:
   port: 8181
