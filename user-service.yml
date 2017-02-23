@@ -20,6 +20,9 @@ security.ignored: /resources/**
 #    fetchRegistry: true
 #    serviceUrl:
 #      defaultZone: https://eureka-281b086b-c070-4554-b1f0-8a3884e215e8.apps.apcf.io
+logging:
+    level:
+        org.springframework.boot.autoconfigure.logging: DEBUG
 ---
 server:
   port: 8181
