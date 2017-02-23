@@ -16,18 +16,20 @@ spring:
         enabled: true
 security.ignored: /resources/**
 # added the following Eureka section
-#eureka:
-#  instance:
-#    prefer-ip-address: true
-#  client:
-#    registerWithEureka: true
-#    fetchRegistry: true
-#    serviceUrl:
-#      defaultZone: https://eureka-281b086b-c070-4554-b1f0-8a3884e215e8.apps.apcf.io
 eureka:
+  instance:
+    prefer-ip-address: true
   client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: https://discovery-service-glummest-nasologist.apps.apcf.io/
     healthcheck:
       enabled: true
+#eureka:
+#  client:
+#    healthcheck:
+#      enabled: true
 
 logging:
   level:
