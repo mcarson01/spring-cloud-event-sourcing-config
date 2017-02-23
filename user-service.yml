@@ -19,13 +19,14 @@ security.ignored: /resources/**
 eureka:
   instance:
     prefer-ip-address: true
+    non-secure-port: 8181
   client:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
       defaultZone: https://discovery-service-glummest-nasologist.apps.apcf.io/
     healthcheck:
-      enabled: true
+      enabled: true      
 #eureka:
 #  client:
 #    healthcheck:
