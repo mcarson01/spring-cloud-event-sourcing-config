@@ -15,23 +15,6 @@ spring:
       discovery:
         enabled: true
 security.ignored: /resources/**
-# added the following Eureka section
-#eureka:
-#  instance:
-#    prefer-ip-address: true
-#    non-secure-port: 8181
-#  client:
-#    registerWithEureka: true
-#    fetchRegistry: true
-#    serviceUrl:
-#      defaultZone: https://discovery-service-glummest-nasologist.apps.apcf.io/
-#    healthcheck:
-#      enabled: true      
-#eureka:
-#  client:
-#    healthcheck:
-#      enabled: true
-
 logging:
   level:
     org.springframework.boot.autoconfigure.logging: DEBUG
